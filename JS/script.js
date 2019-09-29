@@ -78,6 +78,7 @@ function resetScores() {
     modifyWinnerScore();
     scorePlayer1.classList.remove('winner')
     scorePlayer2.classList.remove("winner")
+    input.value = "5";
 }
 
 // ============== Initial Statement =================
