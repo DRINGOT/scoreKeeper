@@ -72,8 +72,10 @@ function setWinnerScore() {
 function resetScores() {
     scoreP1 = 0;
     scoreP2 = 0;
+    scoreMax = 5;
     modifyScoreIntoSpanP1();
     modifyScoreIntoSpanP2();
+    modifyWinnerScore();
     scorePlayer1.classList.remove('winner')
     scorePlayer2.classList.remove("winner")
 }
