@@ -18,3 +18,8 @@ let scoreMax = 5;
 function insertScoreintoSpanP1() {
     scorePlayer1.append(document.createTextNode(scoreP1));
 }
+
+function modifyScoreIntoSpanP1() {
+    scorePlayer1.innerText = scoreP1;
+}
+
