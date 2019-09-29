@@ -13,3 +13,8 @@ let scoreP1 = 0;
 let scoreP2 = 0;
 let scoreMax = 5;
 
+
+// ============== Player 1 =================
+function insertScoreintoSpanP1() {
+    scorePlayer1.append(document.createTextNode(scoreP1));
+}
