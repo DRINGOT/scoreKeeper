@@ -74,6 +74,8 @@ function resetScores() {
     scoreP2 = 0;
     modifyScoreIntoSpanP1();
     modifyScoreIntoSpanP2();
+    scorePlayer1.classList.remove('winner')
+    scorePlayer2.classList.remove("winner")
 }
 
 // ============== Initial Statement =================
