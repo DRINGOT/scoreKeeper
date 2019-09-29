@@ -51,3 +51,15 @@ function incrementScore2() {
         scorePlayer2.classList.add('winner')
     }
 }
+// ============== Winner Score =================
+function insertScoreintoSpanMax() {
+    winnerScore.append(document.createTextNode(scoreMax));
+}
+
+function modifyWinnerScore() {
+    winnerScore.innerText = scoreMax;
+}
+
+function setWinnerScore() {
+    insertScoreintoSpanMax();
+}
