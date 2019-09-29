@@ -71,3 +71,19 @@ function resetScores() {
     modifyScoreIntoSpanP1();
     modifyScoreIntoSpanP2();
 }
+
+// ============== Initial Statement =================
+
+function setScoreMax() {
+    scoreMax = +input.value;
+    winnerScore.innerText = +input.value;
+
+
+}
+
+function scoreKeeper() {
+    insertScoreintoSpanMax();
+    insertScoreintoSpanP1();
+    insertScoreintoSpanP2();
+
+}
