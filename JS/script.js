@@ -33,3 +33,21 @@ function incrementScore1() {
     }
 }
 
+// ============== Player 2 =================
+function insertScoreintoSpanP2() {
+    scorePlayer2.append(document.createTextNode(scoreP2));
+}
+
+function modifyScoreIntoSpanP2() {
+    scorePlayer2.innerText = scoreP2;
+}
+
+function incrementScore2() {
+    if (scoreP2 < scoreMax && scoreP1 < scoreMax) {
+        scoreP2++;
+        scorePlayer2.innerText = scoreP2;
+    }
+    if (scoreP2 === scoreMax) {
+        scorePlayer2.classList.add('winner')
+    }
+}
