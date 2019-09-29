@@ -23,3 +23,13 @@ function modifyScoreIntoSpanP1() {
     scorePlayer1.innerText = scoreP1;
 }
 
+function incrementScore1() {
+    if (scoreP1 < scoreMax && scoreP2 < scoreMax) {
+        scoreP1++;
+        scorePlayer1.innerText = scoreP1;
+    }
+    if (scoreP1 === scoreMax) {
+        scorePlayer1.classList.add('winner')
+    }
+}
+
