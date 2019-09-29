@@ -63,3 +63,11 @@ function modifyWinnerScore() {
 function setWinnerScore() {
     insertScoreintoSpanMax();
 }
+// ============== Reset =================
+
+function resetScores() {
+    scoreP1 = 0;
+    scoreP2 = 0;
+    modifyScoreIntoSpanP1();
+    modifyScoreIntoSpanP2();
+}
