@@ -13,8 +13,8 @@ let scoreP1 = 0;
 let scoreP2 = 0;
 let scoreMax = 5;
 
-
 // ============== Player 1 =================
+
 function insertScoreintoSpanP1() {
     scorePlayer1.append(document.createTextNode(scoreP1));
 }
@@ -34,6 +34,7 @@ function incrementScore1() {
 }
 
 // ============== Player 2 =================
+
 function insertScoreintoSpanP2() {
     scorePlayer2.append(document.createTextNode(scoreP2));
 }
@@ -51,7 +52,9 @@ function incrementScore2() {
         scorePlayer2.classList.add('winner')
     }
 }
+
 // ============== Winner Score =================
+
 function insertScoreintoSpanMax() {
     winnerScore.append(document.createTextNode(scoreMax));
 }
@@ -63,6 +66,7 @@ function modifyWinnerScore() {
 function setWinnerScore() {
     insertScoreintoSpanMax();
 }
+
 // ============== Reset =================
 
 function resetScores() {
@@ -87,3 +91,11 @@ function scoreKeeper() {
     insertScoreintoSpanP2();
 
 }
+
+// ============== Events =================
+
+reset.addEventListener("click", resetScores);
+window.addEventListener("load", scoreKeeper);
+player1Button.addEventListener("click", incrementScore1);
+player2Button.addEventListener("click", incrementScore2);
+input.addEventListener('change', setScoreMax);
