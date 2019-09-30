@@ -15,15 +15,11 @@ button {
 h1 {
     color: goldenrod;
     font-size: 3rem;
-    display: flex;
-    justify-content: center;
 }
 
 h2 {
     color: goldenrod;
     font-size: 2rem;
-    display: flex;
-    justify-content: center;
 }
 
 .winner {
@@ -39,9 +35,8 @@ button {
 }
 
 button {
+    margin-top: 1rem;
     display: inline-block;
-    margin-top: 0.5rem;
-    margin-left: 20.65rem;
     text-align: center;
     color: goldenrod;
     font-size: 16px;
@@ -66,7 +61,6 @@ button:hover {
 }
 
 input {
-    margin-left: 53.2rem;
     color: white;
     font-size: 1rem;
     border: 0.3em solid goldenrod;
